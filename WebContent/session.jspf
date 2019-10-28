@@ -1,0 +1,5 @@
+<%
+Object loggedIn=session.getAttribute("loggedin");
+if(	loggedIn==null || !((String)loggedIn).equals("true"))
+	response.sendRedirect("login.jsp");
+%>
